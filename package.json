@@ -1,0 +1,14 @@
+{
+  "name": "@local/dsh-workspace-defaults",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./plugin": "./lib/index.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
