@@ -96,7 +96,7 @@ dsh plugin --profile web remove "@TowardsDawn/dsh-workspace-defaults"
 $DSH_HOME/workspace-defaults.json
 ```
 
-Windows 默认位置：`C:\Users\<你>\.dsh\workspace-defaults.json`
+Windows 默认位置：`C:\Users\<user>\.dsh\workspace-defaults.json`
 
 ```json
 {
@@ -169,7 +169,7 @@ dsh-workspace-defaults/
 
 ```json
 {
-  "name": "@TowardsDawn/dsh-workspace-defaults",
+  "name": "dsh-workspace-defaults",
   "main": "./lib/index.js",
   "exports": {
     ".": "./lib/index.js",
@@ -194,7 +194,6 @@ dsh-workspace-defaults/
 - 模型 id 不做联网校验，只按原样写入；请确保 provider / model 在你的 DSH 配置中存在。
 - 预设 id 在设置时会通过 `agentPresets.resolve` 校验；创建时若该预设已消失，会**静默回退**到全局默认，保证会话创建不被阻断。
 - 图形化入口是 **Web 设置面板**（`settings.section`）；TUI / ACP 没有该界面，也没有模型可调用的工具，配置仅通过 Web 面板完成。
-- 包名使用大写 scope `@TowardsDawn`。npm registry 要求包名全小写，从 GitHub 安装通常不受影响；若 `dsh plugin add` 因包名报错，或将来要发布到 npm，请把 `package.json` 的 `name` 与 `cordis.patch.yml` 中的引用统一改为小写 scope（例如 `@towardsdawn/dsh-workspace-defaults`）。
 
 ---
 
@@ -216,4 +215,4 @@ dsh-workspace-defaults/
 
 ## License
 
-暂未指定。发布到公开仓库前，请补充 `LICENSE` 文件并选择符合你意愿的许可证。
+[MIT](LICENSE)

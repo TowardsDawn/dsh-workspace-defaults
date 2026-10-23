@@ -1,5 +1,5 @@
 {
-  "name": "@TowardsDawn/dsh-workspace-defaults",
+  "name": "dsh-workspace-defaults",
   "version": "1.1.0",
   "private": true,
   "type": "module",

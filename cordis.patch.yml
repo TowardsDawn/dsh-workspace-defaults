@@ -8,4 +8,4 @@
 #（dsh plugin 会把新包追加进 profile 的 dsh.profile.bundles）
 - insert:
     - id: workspace-defaults
-      name: '@TowardsDawn/dsh-workspace-defaults'
+      name: 'dsh-workspace-defaults'
