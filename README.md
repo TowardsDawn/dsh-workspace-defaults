@@ -61,7 +61,7 @@ dsh plugin --profile web add "https://github.com/TowardsDawn/dsh-workspace-defau
 ### 卸载
 
 ```bash
-dsh plugin --profile web remove "@TowardsDawn/dsh-workspace-defaults"
+dsh plugin --profile web remove "dsh-workspace-defaults"
 ```
 
 ---
