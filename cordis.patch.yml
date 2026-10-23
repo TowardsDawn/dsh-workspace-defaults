@@ -4,7 +4,8 @@
 #   - 模型：在 sessionController.createAgent 期间用 AsyncLocalStorage 覆盖
 #     agentDefaultModel.currentSelection() 的返回值。
 # 已有会话、以及会话内的预设/模型切换都不经过这些路径，因此不受影响。
-# 安装方式：plugin_manager { action: install_bundle, target: <本目录绝对路径> }
+# 安装方式：dsh plugin --profile web add "<GitHub 仓库或本地目录>"
+#（dsh plugin 会把新包追加进 profile 的 dsh.profile.bundles）
 - insert:
     - id: workspace-defaults
-      name: '@local/dsh-workspace-defaults/plugin'
+      name: '@TowardsDawn/dsh-workspace-defaults'
